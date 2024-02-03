@@ -1,0 +1,41 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "Lorem Ipsum",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo vel est pulvinar ullamcorper. Suspendisse potenti. Vivamus auctor vestibulum purus, eget consectetur risus fringilla vitae.",
+            "like_counter": 155
+        },
+        {
+            "id": "2",
+            "title": "Dolor Sit Amet",
+            "description": "Dolor sit amet, consectetur adipiscing elit. Fusce vel tortor in lacus finibus efficitur. Sed imperdiet metus nec velit sagittis, vel finibus purus scelerisque.",
+            "like_counter": 22
+        },
+        {
+            "id": "3",
+            "title": "Adipiscing Elit",
+            "description": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "like_counter": 10
+        },
+        {
+            "id": "4",
+            "title": "Consectetur",
+            "description": "Consectetur adipiscing elit. Integer nec justo vitae dolor blandit tincidunt vel vitae sapien. Sed sit amet eleifend leo. Curabitur nec turpis nec libero efficitur fringilla.",
+            "like_counter": 18
+        },
+        {
+            "id": "5",
+            "title": "Suspendisse Potenti",
+            "description": "Suspendisse potenti. Vestibulum vitae metus in libero bibendum fermentum. Aenean cursus orci nec risus consectetur, a aliquam libero ullamcorper. Donec et diam auctor, convallis ligula eget, tempor enim.",
+            "like_counter": 30
+        },
+        {
+            "id": "6",
+            "title": "Vivamus Auctor",
+            "description": "Vivamus auctor vestibulum purus, eget consectetur risus fringilla vitae. Nulla facilisi. Sed at malesuada massa. Fusce vel accumsan nisi. Integer vestibulum velit sit amet fringilla suscipit.",
+            "like_counter": 25
+        }
+    ]
+   
+}

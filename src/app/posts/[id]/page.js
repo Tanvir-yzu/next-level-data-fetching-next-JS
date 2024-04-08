@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 export async function generateStaticParams() {
-  const res = await fetch("http://localhost:5000/posts");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await res.json();
   const ids = data.map((postss) => {
     return {
@@ -13,8 +13,8 @@ export async function generateStaticParams() {
 }
 
 const detells = async ({ params }) => {
-  //console.log(params.id);
-  const ress = await fetch(`http://localhost:5000/posts/${params.id}`);
+  console.log(params.id);
+  const ress = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
   const post = await ress.json();
   //console.log(post);
 

@@ -1,19 +1,34 @@
-import Link from "next/link";
+"use client"
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
-const postsPage = async () => {
-  const res = await fetch("http://localhost:5000/posts");
-  const data = await res.json();
-  console.log(data);
+const PostsPage = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+        const data = await res.json();
+        setPosts(data);
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+      }
+    };
+
+    fetchPosts();
+  }, []); // Empty dependency array to run effect only once when component mounts
+
   return (
     <div>
-      <h1>Total post:{data.length}</h1>
+      <h1>Total post: {posts.length}</h1>
       <div className="w-full">
-        {data.map((post) => (
+        {posts.map((post) => (
           <div
             key={post.id}
-            className="card  bg-gray-100-100 shadow-xl w-[70%] mx-auto my-6"
+            className="card bg-gray-100-100 shadow-xl w-[70%] mx-auto my-6"
           >
-            <div className="card-body ">
+            <div className="card-body">
               <h2 className="card-title">{post.title}</h2>
               <p>{post.description}</p>
               <p>{post.like_counter}</p>
@@ -30,4 +45,4 @@ const postsPage = async () => {
   );
 };
 
-export default postsPage;
+export default PostsPage;

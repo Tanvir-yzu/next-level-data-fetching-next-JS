@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const User = () => {
@@ -19,6 +20,11 @@ const User = () => {
           <div className="card-body ">
             <h2 className="card-title">{post.name}</h2>
             <p>{post.email}</p>
+            <div className="card-actions justify-end">
+            <Link href={`/posts`}>
+              <button className="btn btn-primary">Posts</button>
+            </Link>
+          </div>
           </div>
         </div>
       ))}
